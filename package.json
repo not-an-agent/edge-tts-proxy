@@ -1,12 +1,8 @@
 {
   "name": "edge-tts-proxy",
   "version": "1.0.0",
-  "private": true,
-  "scripts": {
-    "dev": "wrangler dev",
-    "deploy": "wrangler deploy"
-  },
-  "devDependencies": {
-    "wrangler": "^3.0.0"
-  }
+  "main": "proxy.js",
+  "scripts": { "start": "node proxy.js" },
+  "dependencies": { "ws": "^8.16.0" },
+  "engines": { "node": ">=18" }
 }
